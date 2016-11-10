@@ -1,8 +1,8 @@
-FROM kibana:5.0
+FROM kibana:4.5.1
 
 EXPOSE 5601:5601
 
 RUN gosu kibana kibana plugin --install elasticsearch/marvel
-RUN gosu kibana kibana plugin --install elastic/sense
+RUN gosu kibana kibana plugin --install elasticsearch/sense
 
 MAINTAINER Alexandr Kulitsky <kulitsky@targetprocess.com>
