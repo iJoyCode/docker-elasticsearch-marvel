@@ -1,4 +1,4 @@
-FROM kibana:4.5.1
+FROM kibana:5.0
 
 EXPOSE 5601:5601
 
